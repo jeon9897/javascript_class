@@ -9,12 +9,23 @@ h2{padding:30px;text-align:center;}
   margin:0px auto;
 }
 .gallery img{
+  display:block;
   width:100%;
   object-fit:cover;
 }
 .gallery .lnb{
   display:flex;
 }
+.gallery .lnb > li{
+  box-sizing: border-box;
+  height:46px;
+  overflow:hidden;
+}
+.gallery .lnb > li:first-child{border:3px solid #f00;}
+.gallery .lnb > li:hover{
+  border:2px solid #f00;
+}
+.gallery .lnb img{transform:scale(1.3);}
 #big_img{position:relative;}
 #big_img i.fas{
   position:absolute;
