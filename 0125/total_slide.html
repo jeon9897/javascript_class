@@ -109,6 +109,7 @@
       });
       //9. 좌, 우 버튼에 마우스를 아웃하면 다시 시간을 넣어서 자동으로 움직이게 한다.
       $('i.fa-angle-left, i.fa-angle-right').mouseleave(function(){
+        clearInterval(Timer);
         Timer = setInterval(moveLeft, 3000);
       });
 
